@@ -1,0 +1,13 @@
+diff --git a/node_modules/@types/keypress.js/index.d.ts b/node_modules/@types/keypress.js/index.d.ts
+index cca63ef..4a1a85d 100755
+--- a/node_modules/@types/keypress.js/index.d.ts
++++ b/node_modules/@types/keypress.js/index.d.ts
+@@ -36,7 +36,7 @@ export interface Combo {
+ export class Listener {
+     constructor(element?: Element, defaults?: ListenerDefaults);
+ 
+-    simple_combo(keys: string, on_keydown_callback: (event?: KeyboardEvent, count?: number) => any): void;
++    simple_combo(keys: string, on_keydown_callback: (event?: KeyboardEvent, count?: number) => any): Combo;
+     counting_combo(keys: string, on_count_callback: (event?: KeyboardEvent, count?: number) => any): void;
+     sequence_combo(keys: string, callback: (event?: KeyboardEvent, count?: number) => any): void;
+     register_combo(combo: Combo): Combo;
